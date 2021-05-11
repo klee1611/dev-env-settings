@@ -1,4 +1,8 @@
-Only Ubuntu and Macintosh available now!!
+# Important
+Only Ubuntu and Macintosh available now!!   
+This script will modify your ``~/.zshrc``,  
+Please backup your ``~/.zshrc`` before running this script if you are using ``zsh`` already!!  
+
 # Goal
 Setup development environment automatically
 
