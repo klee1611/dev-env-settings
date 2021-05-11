@@ -1,4 +1,4 @@
-Only Ubuntu available now!!
+Only Ubuntu and Macintosh available now!!
 # Goal
 Setup development environment automatically
 
@@ -9,8 +9,13 @@ Make sure following exists before running setup scripts:
 
 # Setup Environment
 1. Installation
+For ubuntu,
 ```
 ./zsh_ubuntu.sh
+```
+For Macintosh
+```
+./zsh_mac.sh
 ```
 
 2. Change the font for your terminal to one of the powerline fonts downloaded at the previous step
