@@ -6,7 +6,7 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install powerline fonts
-git clone https://github.com/powerline/fonts.git --depth=1 /tmp
+git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
 cd /tmp/fonts
 ./install.sh
 cd ..
