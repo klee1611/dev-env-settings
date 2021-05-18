@@ -15,4 +15,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo apt install autojump
 
 # zshrc
-mv ${SCRIPT_DIR}/_zshrc ~/.zshrc
+python3 ${SCRIPT_DIR}/zshrc_modify.py

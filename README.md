@@ -10,6 +10,7 @@ Setup development environment automatically
 Make sure following exists before running setup scripts:
 * ``git``
 * ``curl``
+* ``python3``
 
 # Setup Environment
 1. Installation
