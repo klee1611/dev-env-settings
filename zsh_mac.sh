@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-SCRIPT_DIR=$(dirname $0)
+SCRIPT_DIR=$(cd "$(dirname "$0")"; pwd -P)
 
 # Install and set zsh as default shell
 brew install zsh
@@ -19,4 +19,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 brew install autojump
 
 # zshrc
-mv ${SCRIPT_DIR}/_zshrc ~/.zshrc
+python3 ${SCRIPT_DIR}/zshrc_modify.py
