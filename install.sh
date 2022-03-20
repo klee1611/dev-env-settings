@@ -14,7 +14,7 @@ function install_zsh() {
 function install_powerline_fonts() {
     if [ "$1" = "mac" ]
     then
-        git clone https://github.com/powerline/fonts.git --depth=1 /tmp
+        git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
         cd /tmp/fonts
         ./install.sh
         cd ..
