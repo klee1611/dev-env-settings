@@ -64,9 +64,9 @@ function main() {
     echo "Installing zsh plugins..."
     install_plugins ${OS}
 
-    # Overwrite zshrc
-    echo "Overwriting ${HOME}/.zshrc..."
-    mv ${SCRIPT_DIR}/_zshrc ~/.zshrc
+    # Download terminal color scheme
+    echo "Downloading terminal color scheme..."
+    git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git ${HOME}/iTerm2-Color-Schemes
 }
 
 main
