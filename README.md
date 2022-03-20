@@ -1,27 +1,45 @@
-# Important
-Only Ubuntu and Macintosh available now!!   
-This script will modify your ``~/.zshrc``,  
-Please backup your ``~/.zshrc`` before running this script if you are using ``zsh`` already!!  
+This script is used to setup environment for developers with Ubuntu and Macintosh,  
+and is **only availabe for Ubuntu and Macintosh** now.  
 
-# Goal
-Setup development environment automatically
+# Features
+* Install `zsh` and `oh-my-zsh`, and set `oh-my-zsh` as default shell
+* Install powerline fonts
+* Download terminal color scheme ([iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)) to user home directory
+* Install some useful zsh plugins, including
+    * [zsh-completions](https://github.com/zsh-users/zsh-completions)
+    * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    * [autojump](https://github.com/wting/autojump)
 
-# Requirement
-Make sure following exists before running setup scripts:
-* ``git``
-* ``curl``
-* ``python3``
+# Install
+For Mac users,  
+please have Homebrew installed.
 
-# Setup Environment
-1. Installation
-For ubuntu,
+1. Install
 ```
-./zsh_ubuntu.sh
+./install.sh
 ```
-For Macintosh
+2. Modify `~/zshrc`, chang `ZSH_THEME` and `plugins` as below:
 ```
-./zsh_mac.sh
+...
+ZSH_THEME="agnoster"
+...
+plugins=(
+	zsh-completions
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	autojump
+)
+...
 ```
+3. Go to terminal preferences and chose a color scheme to import
 
-2. Change the font for your terminal to one of the powerline fonts downloaded at the previous step
-3. Happy journey
+![import_color_scheme_1](screenshots/import_color_scheme-1.png)
+
+![import_color_scheme_2](screenshots/import_color_scheme-2.png)
+
+4. Change the font of the terminal to one of the downloaded powerline fonts
+
+![change_font](screenshots/change_font.png)
+
+5. Happy journey
