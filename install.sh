@@ -46,7 +46,7 @@ function main() {
             brew install curl git
             OS="mac" ;;
         linux*)
-            apt -y install curl git
+            sudo apt -y install curl git
             OS="ubuntu" ;;
         *)
             echo "OS ${OSTYPE} not supported"
