@@ -56,7 +56,7 @@ function main() {
 
     echo "Installing and set oh-my-zsh as default shell...."
     install_zsh ${OS}
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 
     echo "Installing powerline fonts...."
     install_powerline_fonts ${OS}
